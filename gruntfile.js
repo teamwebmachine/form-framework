@@ -2,13 +2,12 @@ module.exports = function(grunt) {
 
   var JSscripts = [
   'assets/vendor/jquery/dist/jquery.js',
-  'assets/vendor/jquery-migrate-1.2.1.min.js',
   //'assets/vendor/jquery-ui/jquery-ui.js',
   'assets/vendor/bootstrap/dist/js/bootstrap.js',
   'assets/vendor/form.validation/dist/js/bootstrapValidator.js',
   'assets/vendor/bootstrap-multiselect/dist/js/bootstrap-multiselect.js',
-  'assets/scripts/validationRules.js',
-  'assets/scripts/main.js',
+  'assets/js/validationRules.js',
+  'assets/js/main.js',
 
   ];
 

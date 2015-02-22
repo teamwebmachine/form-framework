@@ -1,11 +1,44 @@
 <?php
 
 include ('app/app.php');
-get_head('HTML Title Here');
+get_head('Hello World');
 
 ?>
 <!-- CONTENT AREA -->
 
+
+<header class="wrap masthead">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Hello World.</h1>
+					<p class="lead">Let's make some sick forms.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+
+<div class="wrap">
+	<div class="container">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-xs-4">
+					
+				</div>
+				<div class="col-xs-4">
+					
+				</div>
+				<div class="col-xs-4">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <!-- / CONTENT AREA -->

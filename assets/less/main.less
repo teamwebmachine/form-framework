@@ -1,17 +1,13 @@
 // Fonts
-@import "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300";
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,600,400");
+@import "../vendor/font-awesome/less/font-awesome.less";
+	@fa-font-path:   "../assets/vendor/font-awesome/fonts";
 // Bootstrap
 @import "_bootstrap";
-// Plugins
+// Form Validation Plugin
 @import (css) "../vendor/form.validation/dist/css/bootstrapValidator.css";
-@import "../vendor/font-awesome/less/font-awesome.less";
+// Bootstrap Multiselect
 @import (css) "../vendor/bootstrap-multiselect/dist/css/bootstrap-multiselect.css";
 
-//@import (css) "../vendor/jquery-ui/themes/ui-lightness/jquery-ui.min.css";
-//@import (css) "../vendor/jquery-ui/themes/ui-lightness/theme.css";
-
-@fa-font-path:   "../assets/vendor/font-awesome/fonts";
-@import (css) "../vendor/jquery-asmSelect.css";
-@import "components/_asm.less";
-@import (css) "../assets/vendor/bootstrap-multiselect/dist/css/bootstrap-multiselect.css";
-
+// Example
+@import "components/_example";
