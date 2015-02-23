@@ -24,12 +24,36 @@ Form Frame is a web form start kit that includes several magic plugins and frame
 * grunt-contrib-uglify (0.2.2)
 * grunt-contrib-watch (0.6.1)
 
-### Install
 
+### Install
+It's preferred to have grunt command line tools installed globally, see above for information on this. Clone this repo with `git clone https://cjmosure@bitbucket.org/teamwebmachine/form-starter-kit.git` and run `sudo npm install` in the directory. 
+
+
+#### Bower
+
+Bower has already installed packages, however, you can create a bower.json file with the dependencies as below (iframe resizer omitted) (try `bower init`):
+
+```
+"dependencies": {
+	"bootstrap-multiselect": "~0.9.10",
+	"bootstrap": "~3.3.2",
+	"font-awesome": "~4.3.0",
+	//"form.validation": "~0.5.3",
+	"jquery-ui": "~1.11.2",
+	"jquery": "~2.1.3"
+}
+```
+
+
+#### Grunt
+
+See the `gruntfile.js` file for more information on standard grunt tasks. Run `grunt` via terminal to run all tasks or `grunt watch` to watch for changes and run tasks accordingly. 
 
 
 
 ### AJAX submission w/ jQuery
+
+If you are submitting the form with ajax, you may want to reference [formvalidation.io](http://formvalidation.io/examples/ajax-submit/) as that is the validation engine. As you see below, you can trap on the on success event and prevent the default action in order to do what you need with the post submission. See the `assets/js/validationRules.js` javascript file for usage of the form validation plugin.
 
 ```
 $(document).ready(function() {
