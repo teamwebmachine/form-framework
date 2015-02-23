@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    // All Other Forms
-    $('#contact-form').bootstrapValidator({
+    $('#formID').formValidation({
+        framework: 'bootstrap',
         message: 'This value is not valid',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -35,5 +35,13 @@ $(document).ready(function() {
                 }
             }
         }
+    }).on('success.form.fv', function(e) {
+            // Prevent form submission
+            e.preventDefault();
+            // Response for example purposes
+            $( "#formID" ).slideUp( "slow", function() {
+                $('#response').slideDown("slow");
+            });
+            
     });
 });

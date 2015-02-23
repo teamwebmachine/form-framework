@@ -2,10 +2,11 @@ module.exports = function(grunt) {
 
   var JSscripts = [
   'assets/vendor/jquery/dist/jquery.js',
-  //'assets/vendor/jquery-ui/jquery-ui.js',
   'assets/vendor/bootstrap/dist/js/bootstrap.js',
-  'assets/vendor/form.validation/dist/js/bootstrapValidator.js',
   'assets/vendor/bootstrap-multiselect/dist/js/bootstrap-multiselect.js',
+  'assets/vendor/iframe-resizer/src/iframeResizer.contentWindow.js',
+  'assets/vendor/formvalidation/dist/js/formValidation.js',
+  'assets/vendor/formvalidation/dist/js/framework/bootstrap.js',
   'assets/js/validationRules.js',
   'assets/js/main.js',
 
