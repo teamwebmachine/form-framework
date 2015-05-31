@@ -11,7 +11,8 @@ function get_head($title) {
 	<title><?php echo $title; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="dist/main.min.css" />
+	<link rel="stylesheet" type="text/css" href="dist/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="dist/app.min.css" />
 
 	<!-- TODO: Google Analytics -->
 	<script type="text/javascript">
