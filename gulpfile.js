@@ -9,6 +9,19 @@ var rename = require('gulp-rename');
 var notify = require('gulp-notify');
 var del = require('del');
 var plumber = require('gulp-plumber');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+
+var jsFiles = [
+  'assets/vendor/jquery/dist/jquery.js',
+  'assets/vendor/jquery-ui/jquery-ui.js',
+  'assets/vendor/bootstrap/dist/bootstrap.js',
+  'assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js',
+  'assets/vendor/formvalidation/dist/js/formValidation.js',
+  'assets/vendor/formvalidation/dist/js/framework/bootstrap.js',
+  //'assets/vendor/iframe-resizer/src/iframeResizer.contentWindow.js',
+  'assets/js/*.js'
+]
 
 gulp.task('clean', function(cb) {
   del(['build'], cb);
@@ -33,14 +46,24 @@ gulp.task('bootstrap', function() {
         .pipe(less())
         .pipe(minifycss())
         .pipe(rename('bootstrap.min.css'))
+        .pipe(gulp.dest('dist/bootstrap'));
+});
+
+gulp.task('scripts', function () {
+    return gulp.src(jsFiles)
+        .pipe(plumber())
+        .pipe(concat('app.js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
         .pipe(gulp.dest('dist'))
+        .pipe(notify({ message: 'Scripts Compiled' }));
 });
 
 gulp.task('watch', function() {
   gulp.watch('assets/sass/**', ['styles']);
 });
 
-gulp.task('default', ['bootstrap','styles']);
+gulp.task('default', ['bootstrap','styles', 'scripts']);
 
 function errorHandler (error) {
   console.log(error.toString());
