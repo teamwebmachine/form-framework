@@ -17,6 +17,7 @@ var jsFiles = [
   'assets/vendor/jquery-ui/jquery-ui.js',
   'assets/vendor/bootstrap/dist/bootstrap.js',
   'assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js',
+  'assets/vendor/bootstrap-material-design/scripts/material.js',
   'assets/vendor/formvalidation/dist/js/formValidation.js',
   'assets/vendor/formvalidation/dist/js/framework/bootstrap.js',
   //'assets/vendor/iframe-resizer/src/iframeResizer.contentWindow.js',
@@ -46,7 +47,7 @@ gulp.task('bootstrap', function() {
         .pipe(less())
         .pipe(minifycss())
         .pipe(rename('bootstrap.min.css'))
-        .pipe(gulp.dest('dist/bootstrap'));
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('scripts', function () {
