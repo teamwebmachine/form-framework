@@ -33,6 +33,52 @@
 									<input class="form-control" type="email" name="email" id="email" placeholder="Your Email Address" />
 								</div>
 							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> Example Checkbox
+									</label>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="togglebutton">
+                  <label>
+                    <input type="checkbox" checked=""><span class="toggle"></span> Example Toggle
+                  </label>
+                </div>
+							</div>
+						</div>
+
+						<?php /* Radio input example
+						<div class="row">
+							<div class="col-xs-12">
+                <div class="radio radio-primary">
+                  <label>
+                    <input type="radio" name="sample2" value="option1" checked=""><span class="circle"></span><span class="check"></span>
+                    Example Radio #1
+                  </label>
+                </div>
+                <div class="radio radio-primary">
+                  <label>
+                    <input type="radio" name="sample2" value="option1"><span class="circle"></span><span class="check"></span>
+										Example Radio #2
+                  </label>
+                </div>
+                <div class="radio radio-primary">
+                  <label>
+                    <input type="radio" name="sample2" value="option1"><span class="circle"></span><span class="check"></span>
+										Example Radio #3
+                  </label>
+                </div>
+							</div>
+						</div>
+						*/ ?>
+
+
+						<div class="row">
 							<div class="col-sm-12">
 								<button type="submit" class="btn btn-primary">Submit</button>
 							</div>
